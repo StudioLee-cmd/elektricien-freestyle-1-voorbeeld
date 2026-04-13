@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoltVast Elektrotechniek — Veilige installaties, slimme oplossingen</title>
+  <meta name="description" content="VoltVast Elektrotechniek — uw elektricien in Amsterdam voor groepenkast, nieuwbouw installaties, storingsdienst en laadpalen. NEN 1010 gecertificeerd.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ======================== HEADER ======================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="/" class="logo"><iconify-icon icon="lucide:zap" style="color:var(--color-accent);margin-right:6px;"></iconify-icon>Volt<span>Vast</span></a>
+      <nav class="main-nav" id="mainNav">
+        <a href="#diensten">Diensten</a>
+        <a href="#werkwijze">Werkwijze</a>
+        <a href="#projecten">Projecten</a>
+        <a href="#over">Over ons</a>
+        <a href="blog.html">Blog</a>
+        <a href="#contact" class="nav-cta"><iconify-icon icon="lucide:phone"></iconify-icon> Bel direct</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ======================== HERO ======================== -->
+  <section class="hero">
+    <div class="hero-bg" style="background-image:url(images/hero.jpg);"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge"><iconify-icon icon="lucide:shield-check"></iconify-icon> NEN 1010 Gecertificeerd · Amsterdam</div>
+      <h1 class="hero-title">Stroom die je<br><em>vertrouwt</em></h1>
+      <p class="hero-sub">Van groepenkast tot complete nieuwbouwinstallatie. 24/7 storingsdienst. Altijd binnen 2 uur.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary"><iconify-icon icon="lucide:phone"></iconify-icon> Bel direct</a>
+        <a href="#diensten" class="btn btn-outline"><iconify-icon icon="lucide:arrow-down"></iconify-icon> Bekijk diensten</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><strong>500+</strong><span>installaties</span></div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat"><strong>&lt;2 uur</strong><span>responstijd</span></div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat"><strong>4.9★</strong><span>Google score</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ======================== CIRCUIT TICKER ======================== -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <span><iconify-icon icon="lucide:zap"></iconify-icon> Groepenkast</span>
+      <span><iconify-icon icon="lucide:plug-zap"></iconify-icon> Nieuwbouw</span>
+      <span><iconify-icon icon="lucide:alert-triangle"></iconify-icon> Storingsdienst</span>
+      <span><iconify-icon icon="lucide:sun"></iconify-icon> Laadpaal</span>
+      <span><iconify-icon icon="lucide:lightbulb"></iconify-icon> Domotica</span>
+      <span><iconify-icon icon="lucide:clipboard-check"></iconify-icon> Keuring</span>
+      <span><iconify-icon icon="lucide:zap"></iconify-icon> Groepenkast</span>
+      <span><iconify-icon icon="lucide:plug-zap"></iconify-icon> Nieuwbouw</span>
+      <span><iconify-icon icon="lucide:alert-triangle"></iconify-icon> Storingsdienst</span>
+      <span><iconify-icon icon="lucide:sun"></iconify-icon> Laadpaal</span>
+      <span><iconify-icon icon="lucide:lightbulb"></iconify-icon> Domotica</span>
+      <span><iconify-icon icon="lucide:clipboard-check"></iconify-icon> Keuring</span>
+    </div>
+  </div>
+
+  <!-- ======================== SCROLL-STOP: Video ======================== -->
+  <section class="scroll-video">
+    <div class="scroll-video__container">
+      <canvas class="scroll-video__canvas" id="scrollCanvas"></canvas>
+      <div class="scroll-video__overlay" id="scrollOverlay">
+        <span class="scroll-video__tag"><iconify-icon icon="lucide:play"></iconify-icon> Scroll om te zien</span>
+        <h2 class="scroll-video__title">Van gesloten<br>naar <em>volledig uitgerust</em></h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== BEFORE / AFTER SLIDER ======================== -->
+  <section class="ba-section">
+    <div class="ba-container">
+      <img src="images/craft.jpg" alt="Na — nieuwe installatie" class="ba-after">
+      <img src="images/hero.jpg" alt="Voor — oude situatie" class="ba-before" id="baBefore">
+      <div class="ba-label" id="baLabel">
+        <span class="ba-tag"><iconify-icon icon="lucide:sparkles"></iconify-icon> Scroll om te zien</span>
+        <h2>Van oud naar <em>nieuw</em></h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== DIENSTEN ======================== -->
+  <section class="services" id="diensten">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label"><iconify-icon icon="lucide:zap"></iconify-icon> Wat wij doen</p>
+        <h2 class="section-title">Onze specialisaties</h2>
+        <p class="section-desc">Van eenvoudige reparaties tot complete nieuwbouwinstallaties — altijd NEN 1010 gecertificeerd.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card" data-service="groepenkast">
+          <div class="service-icon"><iconify-icon icon="lucide:shield-check"></iconify-icon></div>
+          <div class="service-number">01</div>
+          <h3>Groepenkast vervangen</h3>
+          <p>Nieuwe groepenkast met aardlekschakelaars en installatieautomaten. Volledig conform NEN 1010, inclusief keuringsrapport.</p>
+          <a href="#contact" class="service-link">Meer info <iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
+        </div>
+        <div class="service-card" data-service="nieuwbouw">
+          <div class="service-icon"><iconify-icon icon="lucide:plug-zap"></iconify-icon></div>
+          <div class="service-number">02</div>
+          <h3>Nieuwbouw installatie</h3>
+          <p>Complete elektra-aanleg voor nieuwbouw en verbouwingen. Van leidingplan tot eindcontrole, smart home ready.</p>
+          <a href="#contact" class="service-link">Meer info <iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
+        </div>
+        <div class="service-card" data-service="storing">
+          <div class="service-icon"><iconify-icon icon="lucide:alert-triangle"></iconify-icon></div>
+          <div class="service-number">03</div>
+          <h3>Storingsdienst 24/7</h3>
+          <p>Kortsluiting of stroomuitval? Onze spoedmonteurs staan 7 dagen per week klaar. Binnen 2 uur ter plaatse.</p>
+          <a href="tel:+31200000000" class="service-link service-link--urgent"><iconify-icon icon="lucide:phone"></iconify-icon> Bel nu</a>
+        </div>
+        <div class="service-card" data-service="laadpaal">
+          <div class="service-icon"><iconify-icon icon="lucide:sun"></iconify-icon></div>
+          <div class="service-number">04</div>
+          <h3>Laadpaal & zonnepanelen</h3>
+          <p>Toekomstbestendig wonen met laadpalen, zonnepanelen en thuisbatterijen. Advies over subsidies inclusief.</p>
+          <a href="#contact" class="service-link">Meer info <iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
+        </div>
+        <div class="service-card" data-service="domotica">
+          <div class="service-icon"><iconify-icon icon="lucide:lightbulb"></iconify-icon></div>
+          <div class="service-number">05</div>
+          <h3>Verlichting & domotica</h3>
+          <p>Van sfeerverlichting tot volledig geautomatiseerde smart home systemen. Ontwerp, installatie en programmering.</p>
+          <a href="#contact" class="service-link">Meer info <iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
+        </div>
+        <div class="service-card" data-service="keuring">
+          <div class="service-icon"><iconify-icon icon="lucide:clipboard-check"></iconify-icon></div>
+          <div class="service-number">06</div>
+          <h3>Periodieke keuring</h3>
+          <p>Verplichte veiligheidskeuring voor woningen en bedrijfspanden. Uitgebreid rapport met actiepunten.</p>
+          <a href="#contact" class="service-link">Meer info <iconify-icon icon="lucide:arrow-right"></iconify-icon></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== WERKWIJZE (Process) ======================== -->
+  <section class="process" id="werkwijze">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label"><iconify-icon icon="lucide:route"></iconify-icon> Hoe werken wij</p>
+        <h2 class="section-title">In 4 stappen naar veilige elektra</h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="process-step-num">01</div>
+          <div class="process-step-icon"><iconify-icon icon="lucide:phone-call"></iconify-icon></div>
+          <h3>Contact & inspectie</h3>
+          <p>Bel ons of plan online. Wij komen gratis langs voor een inspectie en bespreken uw wensen ter plaatse.</p>
+        </div>
+        <div class="process-connector"><iconify-icon icon="lucide:chevron-right"></iconify-icon></div>
+        <div class="process-step">
+          <div class="process-step-num">02</div>
+          <div class="process-step-icon"><iconify-icon icon="lucide:file-text"></iconify-icon></div>
+          <h3>Offerte & planning</h3>
+          <p>Binnen 48 uur ontvangt u een vaste prijsopgave. Geen verrassingen achteraf. Planning op een moment dat u uitkomt.</p>
+        </div>
+        <div class="process-connector"><iconify-icon icon="lucide:chevron-right"></iconify-icon></div>
+        <div class="process-step">
+          <div class="process-step-num">03</div>
+          <div class="process-step-icon"><iconify-icon icon="lucide:wrench"></iconify-icon></div>
+          <h3>Uitvoering</h3>
+          <p>Onze NEN 1010 gecertificeerde monteurs voeren het werk netjes en veilig uit. U wordt op de hoogte gehouden.</p>
+        </div>
+        <div class="process-connector"><iconify-icon icon="lucide:chevron-right"></iconify-icon></div>
+        <div class="process-step">
+          <div class="process-step-num">04</div>
+          <div class="process-step-icon"><iconify-icon icon="lucide:check-circle"></iconify-icon></div>
+          <h3>Keuring & garantie</h3>
+          <p>Na oplevering testen wij alles. U ontvangt een keuringsrapport en 5 jaar garantie op de installatie.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== STATS ======================== -->
+  <section class="stats-bar">
+    <div class="container stats-grid">
+      <div class="stat">
+        <iconify-icon icon="lucide:plug-zap" class="stat-icon"></iconify-icon>
+        <span class="stat-num" data-target="500">0</span>
+        <span class="stat-suffix">+</span>
+        <span class="stat-label">Installaties</span>
+      </div>
+      <div class="stat">
+        <iconify-icon icon="lucide:clock" class="stat-icon"></iconify-icon>
+        <span class="stat-num">&lt; 2u</span>
+        <span class="stat-label">Responstijd</span>
+      </div>
+      <div class="stat">
+        <iconify-icon icon="lucide:shield-check" class="stat-icon"></iconify-icon>
+        <span class="stat-num">100%</span>
+        <span class="stat-label">NEN 1010</span>
+      </div>
+      <div class="stat">
+        <iconify-icon icon="lucide:star" class="stat-icon"></iconify-icon>
+        <span class="stat-num">4.9</span>
+        <span class="stat-suffix">★</span>
+        <span class="stat-label">Google Reviews</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== PROJECTS ======================== -->
+  <section class="projects" id="projecten">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label"><iconify-icon icon="lucide:images"></iconify-icon> Recent werk</p>
+        <h2 class="section-title">Projecten in beeld</h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card project-card--large">
+          <img src="images/project1.jpg" alt="Nieuwbouw installatie Amsterdam-Noord" loading="lazy">
+          <div class="project-overlay">
+            <span class="project-tag"><iconify-icon icon="lucide:home"></iconify-icon> Nieuwbouw</span>
+            <h4>Nieuwbouw Amsterdam-Noord</h4>
+            <p>48 aansluitpunten · 3 weken</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/project2.jpg" alt="Groepenkast grachtenpand" loading="lazy">
+          <div class="project-overlay">
+            <span class="project-tag"><iconify-icon icon="lucide:shield-check"></iconify-icon> Groepenkast</span>
+            <h4>Grachtenpand Centrum</h4>
+            <p>12 groepen · 1 dag</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/kitchen.jpg" alt="Keuken elektra Amstelveen" loading="lazy">
+          <div class="project-overlay">
+            <span class="project-tag"><iconify-icon icon="lucide:plug-zap"></iconify-icon> Renovatie</span>
+            <h4>Keuken Amstelveen</h4>
+            <p>Complete herbekabeling</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/detail.jpg" alt="Laadpaal installatie" loading="lazy">
+          <div class="project-overlay">
+            <span class="project-tag"><iconify-icon icon="lucide:sun"></iconify-icon> Laadpaal</span>
+            <h4>Laadpaal + Zonnepanelen</h4>
+            <p>22kW · 16 panelen</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/carousel.jpg" alt="Bedrijfspand verlichting" loading="lazy">
+          <div class="project-overlay">
+            <span class="project-tag"><iconify-icon icon="lucide:lightbulb"></iconify-icon> Bedrijf</span>
+            <h4>Bedrijfspand Utrecht</h4>
+            <p>LED verlichting · 2 weken</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== ABOUT ======================== -->
+  <section class="about" id="over">
+    <div class="container split-grid">
+      <div class="split-image">
+        <img src="images/team.jpg" alt="VoltVast team monteurs" loading="lazy">
+        <div class="experience-badge">
+          <iconify-icon icon="lucide:award"></iconify-icon>
+          <strong>12+ jaar</strong>
+          <span>ervaring</span>
+        </div>
+      </div>
+      <div class="split-content">
+        <p class="section-label"><iconify-icon icon="lucide:users"></iconify-icon> Over ons</p>
+        <h2 class="section-title">8 monteurs, 1 missie</h2>
+        <p>VoltVast is opgericht in 2012 door twee elektriciens met een simpele overtuiging: elke installatie verdient dezelfde zorg, of het nu een stopcontact is of een complete nieuwbouwwoning.</p>
+        <p>Vandaag werken er 8 NEN 1010 gecertificeerde monteurs die dagelijks Amsterdam en omgeving van veilige stroom voorzien.</p>
+        <div class="about-features">
+          <div class="about-feature"><iconify-icon icon="lucide:shield-check"></iconify-icon><span>NEN 1010 gecertificeerd</span></div>
+          <div class="about-feature"><iconify-icon icon="lucide:clock"></iconify-icon><span>24/7 bereikbaar</span></div>
+          <div class="about-feature"><iconify-icon icon="lucide:badge-check"></iconify-icon><span>5 jaar garantie</span></div>
+          <div class="about-feature"><iconify-icon icon="lucide:calculator"></iconify-icon><span>Vaste prijs vooraf</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== TESTIMONIALS ======================== -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label"><iconify-icon icon="lucide:message-square"></iconify-icon> Klantbeoordelingen</p>
+        <h2 class="section-title">Wat onze klanten zeggen</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <iconify-icon icon="lucide:star"></iconify-icon>
+            <iconify-icon icon="lucide:star"></iconify-icon>
+            <iconify-icon icon="lucide:star"></iconify-icon>
+            <iconify-icon icon="lucide:star"></iconify-icon>
+            <iconify-icon icon="lucide:star"></iconify-icon>
+          </div>
+          <p>"Groepenkast vervangen in ons grachtenpand. Netjes gewerkt, alles opgeruimd, keuringsrapport dezelfde dag. Topservice!"</p>
+          <div class="testimonial-author">
+            <strong>Familie De Vries</strong>
+            <span>Groepenkast — Amsterdam-Centrum</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <iconify-icon icon="lucide:star"></iconify-icon>
+            <iconify-icon icon="lucide:star"></iconify-icon>
+            <iconify-icon icon="lucide:star"></iconify-icon>
+            <iconify-icon icon="lucide:star"></iconify-icon>
+            <iconify-icon icon="lucide:star"></iconify-icon>
+          </div>
+          <p>"Zondag 's avonds kortsluiting. VoltVast was er binnen anderhalf uur. Probleem opgelost, veilig naar bed. Dat is pas service."</p>
+          <div class="testimonial-author">
+            <strong>Mark Hendriks</strong>
+            <span>Spoedstoring — Amsterdam-Oost</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <iconify-icon icon="lucide:star"></iconify-icon>
+            <iconify-icon icon="lucide:star"></iconify-icon>
+            <iconify-icon icon="lucide:star"></iconify-icon>
+            <iconify-icon icon="lucide:star"></iconify-icon>
+            <iconify-icon icon="lucide:star"></iconify-icon>
+          </div>
+          <p>"Laadpaal en 16 zonnepanelen geïnstalleerd. Heel blij met het advies over subsidies — bespaart ons honderden euro's per jaar."</p>
+          <div class="testimonial-author">
+            <strong>Sophie & Jan Bakker</strong>
+            <span>Laadpaal + Zonnepanelen — Amstelveen</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== GALLERY ======================== -->
+  <section class="gallery">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label"><iconify-icon icon="lucide:camera"></iconify-icon> Ons werk</p>
+        <h2 class="section-title">Meer projecten</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-item--wide"><img src="images/about.jpg" alt="VoltVast werkplaats" loading="lazy"><div class="gallery-caption"><iconify-icon icon="lucide:building"></iconify-icon> Werkplaats</div></div>
+        <div class="gallery-item"><img src="images/detail.jpg" alt="Bekabeling detail" loading="lazy"><div class="gallery-caption"><iconify-icon icon="lucide:zap"></iconify-icon> Detail</div></div>
+        <div class="gallery-item"><img src="images/carousel.jpg" alt="Bedrijfspand" loading="lazy"><div class="gallery-caption"><iconify-icon icon="lucide:building-2"></iconify-icon> Bedrijfspand</div></div>
+        <div class="gallery-item gallery-item--wide"><img src="images/craft.jpg" alt="Vakmanschap" loading="lazy"><div class="gallery-caption"><iconify-icon icon="lucide:wrench"></iconify-icon> Vakmanschap</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FAQ ======================== -->
+  <section class="faq">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label"><iconify-icon icon="lucide:help-circle"></iconify-icon> Veelgestelde vragen</p>
+        <h2 class="section-title">Antwoorden op uw vragen</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary><iconify-icon icon="lucide:clock"></iconify-icon> Hoe snel kunnen jullie er zijn bij een storing?</summary>
+          <p>Bij spoedgevallen zijn wij binnen 2 uur ter plaatse in de regio Amsterdam. Bel ons 24/7 storingsnummer en wij komen direct.</p>
+        </details>
+        <details class="faq-item">
+          <summary><iconify-icon icon="lucide:euro"></iconify-icon> Wat kost het vervangen van een groepenkast?</summary>
+          <p>Een standaard groepenkast vervanging kost tussen de €850 en €1.500 afhankelijk van het aantal groepen. Wij geven altijd een vaste prijsopgave vooraf.</p>
+        </details>
+        <details class="faq-item">
+          <summary><iconify-icon icon="lucide:shield-check"></iconify-icon> Zijn jullie NEN 1010 gecertificeerd?</summary>
+          <p>Ja, al onze monteurs zijn NEN 1010 gecertificeerd. Na elke installatie ontvangt u een officieel keuringsrapport.</p>
+        </details>
+        <details class="faq-item">
+          <summary><iconify-icon icon="lucide:car"></iconify-icon> Installeren jullie ook laadpalen?</summary>
+          <p>Zeker. Wij installeren alle gangbare merken laadpalen en adviseren u over de beste optie voor uw situatie, inclusief subsidieaanvraag.</p>
+        </details>
+        <details class="faq-item">
+          <summary><iconify-icon icon="lucide:building"></iconify-icon> Werken jullie ook voor bedrijven?</summary>
+          <p>Ja, wij verzorgen elektra-installaties voor zowel particulieren als zakelijke klanten — van kantoorpanden tot winkels en horeca.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CTA ======================== -->
+  <section class="cta" id="contact">
+    <div class="cta-bg" style="background-image:url(images/cta-bg.jpg);"></div>
+    <div class="cta-overlay"></div>
+    <div class="container cta-content">
+      <iconify-icon icon="lucide:zap" class="cta-icon"></iconify-icon>
+      <h2>Storing? Nieuw project?<br>Wij staan klaar.</h2>
+      <p>Bel direct of vraag vrijblijvend een offerte aan.</p>
+      <div class="cta-buttons">
+        <a href="tel:+31200000000" class="btn btn-primary"><iconify-icon icon="lucide:phone"></iconify-icon> Bel direct</a>
+        <a href="mailto:info@voltvast-voorbeeld.nl" class="btn btn-outline"><iconify-icon icon="lucide:mail"></iconify-icon> Offerte aanvragen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="logo logo--footer"><iconify-icon icon="lucide:zap"></iconify-icon> Volt<span>Vast</span></a>
+        <p>Uw specialist in veilige elektra-installaties in Amsterdam en omgeving.</p>
+        <div class="footer-socials">
+          <a href="#"><iconify-icon icon="lucide:facebook"></iconify-icon></a>
+          <a href="#"><iconify-icon icon="lucide:instagram"></iconify-icon></a>
+          <a href="#"><iconify-icon icon="lucide:linkedin"></iconify-icon></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4><iconify-icon icon="lucide:wrench"></iconify-icon> Diensten</h4>
+        <a href="#diensten">Groepenkast vervangen</a>
+        <a href="#diensten">Nieuwbouw installatie</a>
+        <a href="#diensten">Storingsdienst 24/7</a>
+        <a href="#diensten">Laadpaal & zonnepanelen</a>
+        <a href="#diensten">Verlichting & domotica</a>
+        <a href="#diensten">Periodieke keuring</a>
+      </div>
+      <div class="footer-links">
+        <h4><iconify-icon icon="lucide:navigation"></iconify-icon> Navigatie</h4>
+        <a href="/">Home</a>
+        <a href="#diensten">Diensten</a>
+        <a href="#projecten">Projecten</a>
+        <a href="#over">Over ons</a>
+        <a href="blog.html">Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h4><iconify-icon icon="lucide:map-pin"></iconify-icon> Contact</h4>
+        <a href="tel:+31200000000"><iconify-icon icon="lucide:phone"></iconify-icon> 020 — 000 0000</a>
+        <a href="mailto:info@voltvast-voorbeeld.nl"><iconify-icon icon="lucide:mail"></iconify-icon> info@voltvast-voorbeeld.nl</a>
+        <p><iconify-icon icon="lucide:clock"></iconify-icon> Ma–Vr 07:00–18:00</p>
+        <p><iconify-icon icon="lucide:alert-circle"></iconify-icon> Storingen: 24/7</p>
+        <p><iconify-icon icon="lucide:map-pin"></iconify-icon> Amsterdam</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 VoltVast Elektrotechniek. Alle rechten voorbehouden.</span>
+      <div class="footer-legal">
+        <a href="#">Privacy</a>
+        <a href="#">Voorwaarden</a>
+        <a href="#">KvK: 12345678</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    /* Mobile menu */
+    document.getElementById('hamburger').addEventListener('click', function() {
+      this.classList.toggle('active');
+      document.getElementById('mainNav').classList.toggle('open');
+    });
+
+    /* Header scroll effect */
+    window.addEventListener('scroll', function() {
+      var h = document.getElementById('siteHeader');
+      h.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    /* Scroll-stop video */
+    (function() {
+      var canvas = document.getElementById('scrollCanvas');
+      var overlay = document.getElementById('scrollOverlay');
+      if (!canvas) return;
+      var ctx = canvas.getContext('2d');
+      var frameCount = 121;
+      var frames = [];
+      var loaded = 0;
+      for (var i = 0; i < frameCount; i++) {
+        var img = new Image();
+        img.src = 'images/frames/frame-' + String(i).padStart(3, '0') + '.jpg';
+        img.onload = function() { loaded++; if (loaded === 1) { canvas.width = this.width; canvas.height = this.height; ctx.drawImage(this, 0, 0); } };
+        frames.push(img);
+      }
+      gsap.to({ frame: 0 }, {
+        frame: frameCount - 1, ease: 'none',
+        scrollTrigger: { trigger: '.scroll-video', start: 'top top', end: '+=600%', pin: true, scrub: 1, anticipatePin: 1 },
+        onUpdate: function() { var idx = Math.round(this.targets()[0].frame); if (frames[idx] && frames[idx].complete) { ctx.clearRect(0, 0, canvas.width, canvas.height); ctx.drawImage(frames[idx], 0, 0); } }
+      });
+      gsap.to(overlay, { opacity: 0, scrollTrigger: { trigger: '.scroll-video', start: 'top top', end: '+=30%', scrub: true } });
+    })();
+
+    /* Before/After slider */
+    (function() {
+      var before = document.getElementById('baBefore');
+      var label = document.getElementById('baLabel');
+      if (!before) return;
+      var tl = gsap.timeline({ scrollTrigger: { trigger: '.ba-section', start: 'top top', end: '+=200%', pin: true, scrub: 0.5, anticipatePin: 1 } });
+      tl.fromTo(before, { clipPath: 'inset(0 0 0 0)' }, { clipPath: 'inset(0 100% 0 0)', duration: 1, ease: 'none' });
+      tl.fromTo(label, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power2.out' }, 0.5);
+    })();
+
+    /* Section reveal animations */
+    gsap.utils.toArray('.service-card, .project-card, .testimonial-card, .gallery-item, .process-step, .stat, .about-feature').forEach(function(el, i) {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none none' },
+        y: 40, opacity: 0, duration: 0.7, delay: (i % 3) * 0.1, ease: 'power2.out'
+      });
+    });
+
+    /* Section headers */
+    gsap.utils.toArray('.section-header').forEach(function(el) {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 85%' },
+        y: 30, opacity: 0, duration: 0.8, ease: 'power2.out'
+      });
+    });
+
+    /* Parallax on hero */
+    gsap.to('.hero-bg', {
+      scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true },
+      y: '30%', ease: 'none'
+    });
+
+    /* Counter animation */
+    document.querySelectorAll('.stat-num[data-target]').forEach(function(el) {
+      var target = parseInt(el.dataset.target);
+      ScrollTrigger.create({
+        trigger: el, start: 'top 80%',
+        onEnter: function() {
+          gsap.to({ val: 0 }, {
+            val: target, duration: 2, ease: 'power2.out',
+            onUpdate: function() { el.textContent = Math.round(this.targets()[0].val); }
+          });
+        }, once: true
+      });
+    });
+  </script>
+
+  <!-- StudioLee credit badge -->
+  <a href="https://www.studiolee.nl" target="_blank" rel="nofollow noopener" style="position:fixed;bottom:14px;right:14px;z-index:9999;background:rgba(0,0,0,.85);color:#fff;padding:9px 18px;border-radius:99px;font-family:system-ui,sans-serif;font-size:12px;font-weight:600;letter-spacing:.04em;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,.25);transition:transform .2s,background .2s;display:inline-flex;align-items:center;gap:6px" onmouseover="this.style.transform='translateY(-2px)';this.style.background='#cdfb52';this.style.color='#0a0a0a'" onmouseout="this.style.transform='translateY(0)';this.style.background='rgba(0,0,0,.85)';this.style.color='#fff'">Speciaal gemaakt voor elektriciens door StudioLee.nl &nearr;</a>
+
+</body>
+</html>
